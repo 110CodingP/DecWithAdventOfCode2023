@@ -1,17 +1,58 @@
-px{a<2006:qkq,m>2090:A,rfg}
-pv{a>1716:R,A}
-lnx{m>1548:A,A}
-rfg{s<537:gd,x>2440:R,A}
-qs{s>3448:A,lnx}
-qkq{x<1416:A,crn}
-crn{x>2662:A,R}
-in{s<1351:px,qqz}
-qqz{s>2770:qs,m<1801:hdj,R}
-gd{a>3333:R,R}
-hdj{m>838:A,pv}
-
-{x=787,m=2655,a=1222,s=2876}
-{x=1679,m=44,a=2067,s=496}
-{x=2036,m=264,a=79,s=2244}
-{x=2461,m=1339,a=466,s=291}
-{x=2127,m=1623,a=2188,s=1013}
+%dj -> fj, jn
+%xz -> cm
+%fn -> rj
+%fv -> nt, zp
+%ls -> ph, cf
+%rk -> zp, tp
+&jn -> km, cr, vz
+%nh -> ph, ls
+%tx -> gb
+%xg -> dv, zp
+%tp -> gx
+&zp -> kj, kz, gx, fv, lv, tp
+&gq -> rx
+%fj -> sl, jn
+%cr -> vz, jn
+%rt -> fn, mf
+%kj -> tt
+%tk -> mg, ph
+%xt -> jn, gh
+%qx -> bx
+%lv -> sx
+%nz -> dp, ph
+%sx -> kj, zp
+%dd -> bf
+%gb -> jp
+%bj -> ph, nn
+%sk -> mf
+%bx -> tx, mf
+%mt -> xg, zp
+%vz -> hf
+%vx -> mf, sk
+%tt -> mt, zp
+%br -> jn, fk
+&xj -> gq
+%mg -> ph, ps
+%nt -> zp, rk
+&qs -> gq
+%rj -> qx, mf
+%bf -> vx, mf
+&kz -> gq
+%fk -> jn, gk
+%dv -> zp
+%dp -> ph
+&mf -> gb, tx, xj, dd, qx, rt, fn
+&ph -> nn, xz, tk, ps, qs
+%ps -> xz
+&km -> gq
+broadcaster -> fv, cr, rt, tk
+%gk -> jn, xt
+%cf -> ph, nz
+%tl -> jn, br
+%cm -> bj, ph
+%nn -> nh
+%jp -> mf, dd
+%gh -> jn, dj
+%hf -> tl, jn
+%sl -> jn
+%gx -> lv
