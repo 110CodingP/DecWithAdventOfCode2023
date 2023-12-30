@@ -74,15 +74,16 @@ vector<string> strsplit(string str, string delim){
     return toReturn;
 }
 
-
-pair<long long,long long> p={0,0};
+long long btn=0;
 broadcaster brdcstr;
 map<string, flipflop> ff;
 map<string, cjn> cn;
 queue<sgn> toBeProcessed;
+bool done=false;
+long long first=0,second=0,third=0,fourth=0;
 
 void press() {
-  pair<long long,long long> pr={0,0};
+  btn++;
   while (!toBeProcessed.empty()) {
     //cout<<pr.first<<' '<<pr.second<<"*\n";
     sgn u=toBeProcessed.front();
@@ -90,9 +91,12 @@ void press() {
     string name=u.to;
     string from=u.from;
     bool sig=u.strength;
-    //cout<<name<<' '<<from<<' '<<sig<<endl;
-    if (sig) pr.first++;
-    else pr.second++;
+    if (!sig) {
+      if (name=="xj") {first=(first>0)?first:btn;}
+      if (name=="qs") {second=(second>0)?second:btn;}
+      if (name=="kz") {third=(third>0)?third:btn;}
+      if (name=="km") {fourth=(fourth>0)?fourth:btn;}
+    }
     if (name=="brdcstr") {
       for (auto node: brdcstr.nodes) {
         //cout<<name<<endl;
@@ -134,8 +138,6 @@ void press() {
       }
     }
   }
-  p.first+=pr.first;
-  p.second+=pr.second;
   return;
 }
 
@@ -205,11 +207,13 @@ int main() {
   sgn s{"btn","brdcstr",0};
   toBeProcessed.push(s);
   
-  for (int i=0;i<1000;i++) {
+  for (int i=0;;i++) {
    press();
    toBeProcessed.push(s);
+   //cout<<btn<<endl;
+   if ((first>0)&&(second>0)&&(third>0)&&(fourth>0)) break;
   }
-  //cout<<p.first<<endl<<p.second<<endl;
-  cout<<p.first*p.second<<endl;
+  cout<<first<<' '<<second<<' '<<third<<' '<<fourth<<endl;
+  //found the LCM using findLCM.cpp
   return 0; 
 }
